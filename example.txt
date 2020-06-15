@@ -1,0 +1,14 @@
+tempsNote:X secondes
+LA
+DO
+FA
+RE
+MI
+SOL
+MI
+RE
+...
+
+
+
+FIN
