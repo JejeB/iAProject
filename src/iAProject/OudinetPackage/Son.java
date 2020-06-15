@@ -18,12 +18,17 @@ import javax.sound.sampled.AudioFormat;
 
 public class Son
 {
-	private int frequence;
-	private float[] donnees;
+	protected int frequence;
+	protected float[] donnees;
 
 	public int frequence() {return frequence;}
 	public float[] donnees() {return donnees;}
-
+	
+	
+	public Son() {
+		
+	}
+	
 	// Constructeur d'un objet permettant de lire un fichier son mono-canal
 	// 16 bits PCM little endian, en utilisant les API Java
 	public Son(final String nomFichier)
@@ -59,8 +64,12 @@ public class Son
 		}
 	}
 
-	public static void main (String[] args)
-	{
+	
+	
+	
+public static void main (String[] args)
+	{	
+		
 		if (args.length == 1)
 		{
 			System.out.println("Lecture du fichier WAV "+args[0]);
@@ -71,3 +80,6 @@ public class Son
 			System.out.println("Veuillez donner le nom d'un fichier WAV en paramètre SVP.");
 	}
 }
+
+
+
